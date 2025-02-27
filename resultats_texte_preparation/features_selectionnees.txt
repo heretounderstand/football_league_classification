@@ -1,0 +1,6 @@
+FEATURES SÉLECTIONNÉES (Top 20)
+==================================================
+
+['Home_Shots', 'Away_Shots', 'Home_Shots_On_Target', 'Away_Shots_On_Target', 'Home_Fouls', 'Away_Fouls', 'Home_Corners', 'Away_Corners', 'Home_Yellow_Cards', 'Away_Yellow_Cards', 'Match_Weekday', 'Is_Weekend', 'Total_Shots', 'Total_Shots_On_Target', 'Total_Fouls', 'Total_Corners', 'Total_Yellow_Cards', 'Home_Dominance_Yellow_Cards', 'Home_Team_Strength', 'Away_Team_Strength']
+
+Nombre de features sélectionnées: 20

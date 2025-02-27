@@ -1,0 +1,33 @@
+DISTRIBUTION DE LA VARIABLE CIBLE (LEAGUE_DIVISION)
+==================================================
+
+Nombre d'instances par classe:
+League_Division
+EFL Championship    16560
+LaLiga 2            12392
+Premier League      11564
+LaLiga              11564
+Serie B             11162
+Ligue 1             10929
+Serie A             10586
+Ligue 2             10323
+Bundesliga 2         9254
+Bundesliga           9180
+Name: count, dtype: int64
+
+Pourcentage par classe:
+League_Division
+EFL Championship    14.588509
+LaLiga 2            10.916715
+Premier League      10.187290
+LaLiga              10.187290
+Serie B              9.833148
+Ligue 1              9.627887
+Serie A              9.325722
+Ligue 2              9.094032
+Bundesliga 2         8.152298
+Bundesliga           8.087108
+Name: proportion, dtype: float64
+
+Ratio de déséquilibre (classe max / classe min): 1.80
+Les classes semblent relativement équilibrées.

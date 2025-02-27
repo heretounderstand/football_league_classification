@@ -1,0 +1,3 @@
+Modèle : LightGBM
+Total erreurs: 1236
+Erreurs dans le même pays: 1107 (89.56%)

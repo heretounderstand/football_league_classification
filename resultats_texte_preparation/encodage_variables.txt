@@ -1,0 +1,8 @@
+ENCODAGE DES VARIABLES CATÉGORIELLES
+==================================================
+
+Variables catégorielles encodées: ['Match_Time_Category']
+
+Nouvelles variables après encodage one-hot: ['Match_Time_Category_Evening', 'Match_Time_Category_Morning', 'Match_Time_Category_Unknown']
+
+Nombre de variables après encodage: 3

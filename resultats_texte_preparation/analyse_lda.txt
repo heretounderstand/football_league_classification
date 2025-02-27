@@ -1,0 +1,16 @@
+ANALYSE DISCRIMINANTE LINÉAIRE (LDA)
+==================================================
+
+Nombre de classes: 10
+Nombre de composantes LDA: 9
+
+Ratio de variance expliquée par composante:
+Composante LD1: 0.3671
+Composante LD2: 0.3415
+Composante LD3: 0.1145
+Composante LD4: 0.0917
+Composante LD5: 0.0454
+Composante LD6: 0.0193
+Composante LD7: 0.0091
+Composante LD8: 0.0067
+Composante LD9: 0.0048

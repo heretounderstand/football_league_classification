@@ -1,0 +1,103 @@
+ÉVALUATION DES MODÈLES OPTIMISÉS
+======================================================================
+
+Modèle: LightGBM
+--------------------------------------------------
+
+Accuracy: 0.9637
+Precision (weighted): 0.9639
+Recall (weighted): 0.9637
+F1 Score (weighted): 0.9637
+ROC AUC: 0.9992
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bundesliga       0.97      0.99      0.98      2754
+    Bundesliga 2       0.99      0.96      0.97      2776
+EFL Championship       0.92      0.96      0.94      4968
+          LaLiga       0.97      0.98      0.97      3469
+        LaLiga 2       0.97      0.96      0.97      3718
+         Ligue 1       0.97      0.99      0.98      3279
+         Ligue 2       0.98      0.96      0.97      3097
+  Premier League       0.93      0.89      0.91      3469
+         Serie A       0.98      0.98      0.98      3176
+         Serie B       0.98      0.98      0.98      3349
+
+        accuracy                           0.96     34055
+       macro avg       0.97      0.96      0.97     34055
+    weighted avg       0.96      0.96      0.96     34055
+
+==================================================
+
+Modèle: XGBoost
+--------------------------------------------------
+
+Accuracy: 0.9620
+Precision (weighted): 0.9624
+Recall (weighted): 0.9620
+F1 Score (weighted): 0.9620
+ROC AUC: 0.9992
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bundesliga       0.97      0.99      0.98      2754
+    Bundesliga 2       0.98      0.95      0.97      2776
+EFL Championship       0.91      0.96      0.93      4968
+          LaLiga       0.97      0.98      0.97      3469
+        LaLiga 2       0.97      0.95      0.96      3718
+         Ligue 1       0.97      0.99      0.98      3279
+         Ligue 2       0.98      0.96      0.97      3097
+  Premier League       0.94      0.89      0.91      3469
+         Serie A       0.98      0.98      0.98      3176
+         Serie B       0.98      0.97      0.97      3349
+
+        accuracy                           0.96     34055
+       macro avg       0.97      0.96      0.96     34055
+    weighted avg       0.96      0.96      0.96     34055
+
+==================================================
+
+Modèle: CatBoost
+--------------------------------------------------
+
+Accuracy: 0.9257
+Precision (weighted): 0.9270
+Recall (weighted): 0.9257
+F1 Score (weighted): 0.9257
+ROC AUC: 0.9970
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+      Bundesliga       0.94      0.96      0.95      2754
+    Bundesliga 2       0.95      0.90      0.92      2776
+EFL Championship       0.85      0.94      0.89      4968
+          LaLiga       0.93      0.96      0.94      3469
+        LaLiga 2       0.93      0.90      0.91      3718
+         Ligue 1       0.94      0.96      0.95      3279
+         Ligue 2       0.96      0.91      0.93      3097
+  Premier League       0.92      0.86      0.89      3469
+         Serie A       0.95      0.96      0.95      3176
+         Serie B       0.94      0.92      0.93      3349
+
+        accuracy                           0.93     34055
+       macro avg       0.93      0.93      0.93     34055
+    weighted avg       0.93      0.93      0.93     34055
+
+==================================================
+
+
+SYNTHÈSE DES RÉSULTATS FINAUX:
+Meilleur modèle global: LightGBM
+F1 Score: 0.9637
+Accuracy: 0.9637
+ROC AUC: 0.9992
+
+
+PROCESSUS TERMINÉ
+Tous les modèles ont été entraînés, optimisés et évalués.
+Les résultats détaillés sont disponibles dans le dossier 'resultats_texte_classification'.
+Les visualisations_classification sont disponibles dans le dossier 'visualisations_classification'.
+Les modèles entraînés sont sauvegardés dans le dossier 'modeles_entraines'.

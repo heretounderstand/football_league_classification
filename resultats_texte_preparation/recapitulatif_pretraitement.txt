@@ -1,0 +1,20 @@
+RÉCAPITULATIF DU PRÉTRAITEMENT
+==================================================
+
+Nombre total d'instances: 113514
+Instances d'entraînement: 79459 (70.0%)
+Instances de test: 34055 (30.0%)
+
+Features originales: 43
+Features après prétraitement: 45
+Features sélectionnées (ANOVA): 20
+Composantes PCA (95% variance): 21
+Composantes LDA: 9
+
+Fichiers générés:
+- train_original.csv, test_original.csv: Ensembles originaux avec target
+- X_train_preprocessed.csv, X_test_preprocessed.csv: Données prétraitées
+- y_train.csv, y_test.csv: Variables cibles
+- X_train_selected.csv, X_test_selected.csv: Données avec features sélectionnées
+- X_train_pca.csv, X_test_pca.csv: Données réduites par PCA
+- X_train_lda.csv, X_test_lda.csv: Données transformées par LDA

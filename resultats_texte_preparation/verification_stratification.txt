@@ -1,0 +1,36 @@
+VÉRIFICATION DE LA STRATIFICATION
+==================================================
+
+Taille de l'ensemble d'entraînement: 79459 instances (70.0%)
+Taille de l'ensemble de test: 34055 instances (30.0%)
+
+Distribution des classes dans l'ensemble d'entraînement:
+League_Division
+EFL Championship    14.588656
+LaLiga 2            10.916322
+Premier League      10.187644
+LaLiga              10.187644
+Serie B              9.832744
+Ligue 1              9.627607
+Serie A              9.325564
+Ligue 2              9.093998
+Bundesliga 2         8.152632
+Bundesliga           8.087190
+Name: proportion, dtype: float64
+
+Distribution des classes dans l'ensemble de test:
+League_Division
+EFL Championship    14.588166
+LaLiga 2            10.917633
+LaLiga              10.186463
+Premier League      10.186463
+Serie B              9.834092
+Ligue 1              9.628542
+Serie A              9.326090
+Ligue 2              9.094112
+Bundesliga 2         8.151520
+Bundesliga           8.086918
+Name: proportion, dtype: float64
+
+Différence maximale de distribution entre train et test: 0.00%
+La stratification est excellente.

@@ -1,0 +1,33 @@
+INFORMATIONS SUR LE MEILLEUR MODÈLE
+==================================================
+
+Nom du modèle: LightGBM
+Type: LGBMClassifier
+
+Hyperparamètres:
+- boosting_type: gbdt
+- class_weight: None
+- colsample_bytree: 0.8925879806965068
+- importance_type: split
+- learning_rate: 0.06990213464750791
+- max_depth: 9
+- min_child_samples: 20
+- min_child_weight: 0.001
+- min_split_gain: 0.0
+- n_estimators: 293
+- n_jobs: None
+- num_leaves: 83
+- objective: None
+- random_state: 42
+- reg_alpha: 0.0
+- reg_lambda: 0.0
+- subsample: 0.73338144662399
+- subsample_for_bin: 200000
+- subsample_freq: 0
+
+Performances:
+- Accuracy: 0.9637
+- Precision: 0.9639
+- Recall: 0.9637
+- F1 Score: 0.9637
+- ROC AUC: 0.9992

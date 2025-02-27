@@ -1,0 +1,22 @@
+SÉLECTION DES FEATURES PERTINENTES (ANOVA F-TEST)
+==================================================
+
+Top 10 features les plus importantes:
+                  Feature      F_Score  P_Value
+30            Total_Fouls  2574.003140      0.0
+39     Home_Team_Strength  2289.736816      0.0
+40     Away_Team_Strength  2256.476253      0.0
+34     Total_Yellow_Cards  2081.837888      0.0
+8              Home_Fouls  1881.054447      0.0
+28  Total_Shots_On_Target  1579.015174      0.0
+9              Away_Fouls  1451.913281      0.0
+13      Away_Yellow_Cards  1388.428732      0.0
+12      Home_Yellow_Cards  1346.219768      0.0
+19             Is_Weekend  1283.576668      0.0
+
+Features statistiquement non significatives (p > 0.05):
+                     Feature  F_Score   P_Value
+41  Team_Strength_Difference  0.36271  0.952881
+
+Nombre de features non significatives: 1
+

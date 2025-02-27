@@ -1,0 +1,7 @@
+ANALYSE DES VALEURS MANQUANTES
+==================================================
+
+Nombre de valeurs manquantes par colonne:
+Series([], dtype: int64)
+
+Aucune valeur manquante détectée dans le dataset.

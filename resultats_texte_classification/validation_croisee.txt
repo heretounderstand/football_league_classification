@@ -1,0 +1,68 @@
+ÉVALUATION DES MODÈLES DE BASE AVEC VALIDATION CROISÉE
+======================================================================
+
+Modèle: Logistic Regression
+Précision CV moyenne: 0.5339
+Écart-type: 0.0034
+Temps d'exécution: 9.11 secondes
+--------------------------------------------------
+
+Modèle: Random Forest
+Précision CV moyenne: 0.7473
+Écart-type: 0.0033
+Temps d'exécution: 55.41 secondes
+--------------------------------------------------
+
+Modèle: XGBoost
+Précision CV moyenne: 0.9588
+Écart-type: 0.0009
+Temps d'exécution: 38.96 secondes
+--------------------------------------------------
+
+Modèle: LightGBM
+Précision CV moyenne: 0.9618
+Écart-type: 0.0007
+Temps d'exécution: 43.98 secondes
+--------------------------------------------------
+
+Modèle: Ridge Classifier
+Précision CV moyenne: 0.4679
+Écart-type: 0.0044
+Temps d'exécution: 0.60 secondes
+--------------------------------------------------
+
+Modèle: SGD Classifier
+Précision CV moyenne: 0.4132
+Écart-type: 0.0154
+Temps d'exécution: 9.63 secondes
+--------------------------------------------------
+
+Modèle: Extra Trees
+Précision CV moyenne: 0.7406
+Écart-type: 0.0053
+Temps d'exécution: 64.19 secondes
+--------------------------------------------------
+
+Modèle: CatBoost
+Précision CV moyenne: 0.8971
+Écart-type: 0.0061
+Temps d'exécution: 76.07 secondes
+--------------------------------------------------
+
+Modèle: Decision Tree
+Précision CV moyenne: 0.7936
+Écart-type: 0.0063
+Temps d'exécution: 2.29 secondes
+--------------------------------------------------
+
+Modèle: AdaBoost
+Précision CV moyenne: 0.6398
+Écart-type: 0.0129
+Temps d'exécution: 32.06 secondes
+--------------------------------------------------
+
+
+SYNTHÈSE DES RÉSULTATS:
+Meilleur modèle: LightGBM
+Précision CV moyenne: 0.9618
+Modèle le plus rapide: Ridge Classifier

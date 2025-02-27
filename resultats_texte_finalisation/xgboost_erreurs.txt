@@ -1,0 +1,3 @@
+Modèle : XGBoost
+Total erreurs: 1293
+Erreurs dans le même pays: 1063 (82.21%)

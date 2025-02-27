@@ -1,0 +1,54 @@
+OPTIMISATION DES HYPERPARAMÈTRES
+======================================================================
+
+Modèle: LightGBM
+--------------------------------------------------
+
+Meilleurs hyperparamètres:
+{'colsample_bytree': 0.8925879806965068, 'learning_rate': 0.06990213464750791, 'max_depth': 9, 'n_estimators': 293, 'num_leaves': 83, 'subsample': 0.73338144662399}
+
+Meilleur score de validation croisée: 0.9650
+Temps d'exécution: 1448.83 secondes
+
+Statistiques d'optimisation:
+Score moyen: 0.9478
+Score max: 0.9650
+Score min: 0.8569
+Écart-type: 0.0294
+
+==================================================
+
+Modèle: XGBoost
+--------------------------------------------------
+
+Meilleurs hyperparamètres:
+{'colsample_bytree': 0.5779972601681014, 'gamma': 0.05808361216819946, 'learning_rate': 0.26985284373248053, 'max_depth': 6, 'n_estimators': 153, 'subsample': 0.8540362888980227}
+
+Meilleur score de validation croisée: 0.9610
+Temps d'exécution: 1292.19 secondes
+
+Statistiques d'optimisation:
+Score moyen: 0.9149
+Score max: 0.9610
+Score min: 0.6929
+Écart-type: 0.0658
+
+==================================================
+
+Modèle: CatBoost
+--------------------------------------------------
+
+Meilleurs hyperparamètres:
+{'colsample_bylevel': 0.5370223258670452, 'depth': 9, 'iterations': 299, 'l2_leaf_reg': 2.158690595251297, 'learning_rate': 0.2689310277626781, 'subsample': 0.811649063413779}
+
+Meilleur score de validation croisée: 0.9148
+Temps d'exécution: 2259.50 secondes
+
+Statistiques d'optimisation:
+Score moyen: 0.8379
+Score max: 0.9148
+Score min: 0.7324
+Écart-type: 0.0615
+
+==================================================
+
