@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A",
+    "scenario": "Protocole d'origine (stats manquantes = 0, force des équipes, split aléatoire)",
+    "accuracy": 0.9283,
+    "macro_f1": 0.9289,
+    "n_test": 34055
+  },
+  {
+    "id": "A0",
+    "scenario": "Seulement la force des équipes (aucune statistique de match)",
+    "accuracy": 0.8697,
+    "macro_f1": 0.8688,
+    "n_test": 34055
+  },
+  {
+    "id": "A1",
+    "scenario": "Seulement la saison et l'indicateur « stats manquantes »",
+    "accuracy": 0.2167,
+    "macro_f1": 0.0958,
+    "n_test": 34055
+  },
+  {
+    "id": "B",
+    "scenario": "A sans la force des équipes",
+    "accuracy": 0.3212,
+    "macro_f1": 0.2999,
+    "n_test": 34055
+  },
+  {
+    "id": "C",
+    "scenario": "B, uniquement les matchs avec de vraies statistiques",
+    "accuracy": 0.3365,
+    "macro_f1": 0.24,
+    "n_test": 17001
+  },
+  {
+    "id": "D",
+    "scenario": "C avec découpage temporel (test 2021-23)",
+    "accuracy": 0.2026,
+    "macro_f1": 0.145,
+    "n_test": 7810
+  }
+]
