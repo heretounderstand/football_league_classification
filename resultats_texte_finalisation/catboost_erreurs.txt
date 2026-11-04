@@ -1,3 +1,0 @@
-Modèle : CatBoost
-Total erreurs: 2531
-Erreurs dans le même pays: 1245 (49.19%)

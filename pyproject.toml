@@ -1,0 +1,9 @@
+[project]
+name = "flc"
+version = "2.0.0"
+description = "Identifier la ligue d'un match de football à partir de ses statistiques"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

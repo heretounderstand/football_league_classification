@@ -1,0 +1,1499 @@
+{
+  "generated_at": "2026-11-04T16:37:02",
+  "classes": [
+    "Premier League",
+    "EFL Championship",
+    "LaLiga",
+    "LaLiga 2",
+    "Serie A",
+    "Serie B",
+    "Bundesliga",
+    "Bundesliga 2",
+    "Ligue 1",
+    "Ligue 2"
+  ],
+  "leagues": {
+    "Premier League": {
+      "country": "Angleterre",
+      "tier": 1
+    },
+    "EFL Championship": {
+      "country": "Angleterre",
+      "tier": 2
+    },
+    "LaLiga": {
+      "country": "Espagne",
+      "tier": 1
+    },
+    "LaLiga 2": {
+      "country": "Espagne",
+      "tier": 2
+    },
+    "Serie A": {
+      "country": "Italie",
+      "tier": 1
+    },
+    "Serie B": {
+      "country": "Italie",
+      "tier": 2
+    },
+    "Bundesliga": {
+      "country": "Allemagne",
+      "tier": 1
+    },
+    "Bundesliga 2": {
+      "country": "Allemagne",
+      "tier": 2
+    },
+    "Ligue 1": {
+      "country": "France",
+      "tier": 1
+    },
+    "Ligue 2": {
+      "country": "France",
+      "tier": 2
+    }
+  },
+  "splits": {
+    "train": {
+      "seasons": [
+        "2017-18",
+        "2018-19",
+        "2019-20"
+      ],
+      "n": 11157
+    },
+    "valid": {
+      "seasons": [
+        "2020-21"
+      ],
+      "n": 3904
+    },
+    "test": {
+      "seasons": [
+        "2021-22",
+        "2022-23"
+      ],
+      "n": 7809
+    }
+  },
+  "n_raw_matches": 113514,
+  "n_raw_with_stats": 56347,
+  "n_modelling_matches": 22870,
+  "feature_sets": {
+    "match": [
+      "home_shots",
+      "away_shots",
+      "total_shots",
+      "diff_shots",
+      "home_shots_on_target",
+      "away_shots_on_target",
+      "total_shots_on_target",
+      "diff_shots_on_target",
+      "home_fouls",
+      "away_fouls",
+      "total_fouls",
+      "diff_fouls",
+      "home_corners",
+      "away_corners",
+      "total_corners",
+      "diff_corners",
+      "home_yellow",
+      "away_yellow",
+      "total_yellow",
+      "diff_yellow",
+      "home_red",
+      "away_red",
+      "total_red",
+      "diff_red",
+      "home_goals",
+      "away_goals",
+      "total_goals",
+      "diff_goals",
+      "ht_total_goals",
+      "second_half_goals",
+      "home_shot_accuracy",
+      "away_shot_accuracy",
+      "conversion_rate",
+      "fouls_per_card",
+      "corners_per_shot"
+    ],
+    "match_context": [
+      "home_shots",
+      "away_shots",
+      "total_shots",
+      "diff_shots",
+      "home_shots_on_target",
+      "away_shots_on_target",
+      "total_shots_on_target",
+      "diff_shots_on_target",
+      "home_fouls",
+      "away_fouls",
+      "total_fouls",
+      "diff_fouls",
+      "home_corners",
+      "away_corners",
+      "total_corners",
+      "diff_corners",
+      "home_yellow",
+      "away_yellow",
+      "total_yellow",
+      "diff_yellow",
+      "home_red",
+      "away_red",
+      "total_red",
+      "diff_red",
+      "home_goals",
+      "away_goals",
+      "total_goals",
+      "diff_goals",
+      "ht_total_goals",
+      "second_half_goals",
+      "home_shot_accuracy",
+      "away_shot_accuracy",
+      "conversion_rate",
+      "fouls_per_card",
+      "corners_per_shot",
+      "kickoff_hour",
+      "weekday",
+      "month",
+      "is_weekend"
+    ],
+    "full": [
+      "home_shots",
+      "away_shots",
+      "total_shots",
+      "diff_shots",
+      "home_shots_on_target",
+      "away_shots_on_target",
+      "total_shots_on_target",
+      "diff_shots_on_target",
+      "home_fouls",
+      "away_fouls",
+      "total_fouls",
+      "diff_fouls",
+      "home_corners",
+      "away_corners",
+      "total_corners",
+      "diff_corners",
+      "home_yellow",
+      "away_yellow",
+      "total_yellow",
+      "diff_yellow",
+      "home_red",
+      "away_red",
+      "total_red",
+      "diff_red",
+      "home_goals",
+      "away_goals",
+      "total_goals",
+      "diff_goals",
+      "ht_total_goals",
+      "second_half_goals",
+      "home_shot_accuracy",
+      "away_shot_accuracy",
+      "conversion_rate",
+      "fouls_per_card",
+      "corners_per_shot",
+      "kickoff_hour",
+      "weekday",
+      "month",
+      "is_weekend",
+      "form_tot_shots",
+      "form_tot_shots_on_target",
+      "form_tot_fouls",
+      "form_tot_corners",
+      "form_tot_yellow",
+      "form_tot_red",
+      "form_tot_goals",
+      "form_own_fouls",
+      "form_own_yellow",
+      "form_n_prev"
+    ]
+  },
+  "best_model": "lightgbm__full",
+  "simulator_model": "lightgbm__match_context",
+  "results": [
+    {
+      "key": "baseline",
+      "model": "dummy",
+      "feature_set": "—",
+      "n_features": 0,
+      "params": {},
+      "valid": {
+        "accuracy": 0.1413934426229508,
+        "balanced_accuracy": 0.1,
+        "macro_f1": 0.024775583482944345,
+        "top2_accuracy": 0.25973360655737704,
+        "log_loss": 2.29954352445946,
+        "country_accuracy": 0.2387295081967213,
+        "tier_accuracy": 0.5322745901639344
+      },
+      "test": {
+        "accuracy": 0.14137533615059547,
+        "balanced_accuracy": 0.1,
+        "macro_f1": 0.024772803769774487,
+        "top2_accuracy": 0.2597003457548982,
+        "log_loss": 2.2927477996490433,
+        "country_accuracy": 0.23857087975412986,
+        "tier_accuracy": 0.5324625432193623
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.1413934426229508,
+          "balanced_accuracy": 0.1,
+          "macro_f1": 0.024775583482944345,
+          "top2_accuracy": 0.25973360655737704,
+          "log_loss": 2.2938875209577505,
+          "country_accuracy": 0.2384733606557377,
+          "tier_accuracy": 0.532530737704918
+        },
+        "2022-23": {
+          "accuracy": 0.1413572343149808,
+          "balanced_accuracy": 0.1,
+          "macro_f1": 0.024770024680278214,
+          "top2_accuracy": 0.25966709346991035,
+          "log_loss": 2.2916083702023875,
+          "country_accuracy": 0.2386683738796415,
+          "tier_accuracy": 0.532394366197183
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.13439300806761428,
+          0.14944295044179792
+        ],
+        "balanced_accuracy": [
+          0.1,
+          0.1
+        ],
+        "macro_f1": [
+          0.02369425832740327,
+          0.026002673796791442
+        ],
+        "top2_accuracy": [
+          0.25060827250608275,
+          0.2700249711870918
+        ],
+        "log_loss": [
+          2.2882005867292103,
+          2.297529682963778
+        ],
+        "country_accuracy": [
+          0.2292835190165194,
+          0.2486938148290434
+        ],
+        "tier_accuracy": [
+          0.5210526315789473,
+          0.5430304776539889
+        ]
+      }
+    },
+    {
+      "key": "logreg__match",
+      "model": "logreg",
+      "feature_set": "match",
+      "n_features": 35,
+      "params": {
+        "C": 0.01
+      },
+      "valid": {
+        "accuracy": 0.24462090163934427,
+        "balanced_accuracy": 0.22074592048937314,
+        "macro_f1": 0.1936040960647461,
+        "top2_accuracy": 0.39728483606557374,
+        "log_loss": 2.12161900834513,
+        "country_accuracy": 0.3603995901639344,
+        "tier_accuracy": 0.6162909836065574
+      },
+      "test": {
+        "accuracy": 0.1760788833397362,
+        "balanced_accuracy": 0.15889650552621223,
+        "macro_f1": 0.14433845287702654,
+        "top2_accuracy": 0.3399923165578179,
+        "log_loss": 2.2253982696155905,
+        "country_accuracy": 0.32142399795108206,
+        "tier_accuracy": 0.5429632475348957
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.17802254098360656,
+          "balanced_accuracy": 0.16307868443110032,
+          "macro_f1": 0.1467147799325818,
+          "top2_accuracy": 0.34451844262295084,
+          "log_loss": 2.2203474810366854,
+          "country_accuracy": 0.31787909836065575,
+          "tier_accuracy": 0.5422643442622951
+        },
+        "2022-23": {
+          "accuracy": 0.17413572343149808,
+          "balanced_accuracy": 0.15473284439782237,
+          "macro_f1": 0.14111415865030302,
+          "top2_accuracy": 0.3354673495518566,
+          "log_loss": 2.230447764778726,
+          "country_accuracy": 0.32496798975672214,
+          "tier_accuracy": 0.543661971830986
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.16768792419003714,
+          0.18325009604302728
+        ],
+        "balanced_accuracy": [
+          0.15143129183981344,
+          0.1657751858360821
+        ],
+        "macro_f1": [
+          0.1368737333305722,
+          0.1519026323261412
+        ],
+        "top2_accuracy": [
+          0.33051607119989757,
+          0.3496702522730183
+        ],
+        "log_loss": [
+          2.210277796729581,
+          2.239140992562442
+        ],
+        "country_accuracy": [
+          0.31206940709437825,
+          0.33147970290690226
+        ],
+        "tier_accuracy": [
+          0.5319439108720706,
+          0.5535984120886156
+        ]
+      }
+    },
+    {
+      "key": "lightgbm__match",
+      "model": "lightgbm",
+      "feature_set": "match",
+      "n_features": 35,
+      "params": {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.8214317602631983,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7355242964472481,
+        "reg_lambda": 0.11583114335146445,
+        "n_estimators": 80
+      },
+      "valid": {
+        "accuracy": 0.24846311475409835,
+        "balanced_accuracy": 0.22479869732782087,
+        "macro_f1": 0.20123521986487325,
+        "top2_accuracy": 0.3975409836065574,
+        "log_loss": 2.1186594750670644,
+        "country_accuracy": 0.3634733606557377,
+        "tier_accuracy": 0.6142418032786885
+      },
+      "test": {
+        "accuracy": 0.1852990139582533,
+        "balanced_accuracy": 0.1682904231592349,
+        "macro_f1": 0.1538634950115097,
+        "top2_accuracy": 0.3407606607760277,
+        "log_loss": 2.2169854113943828,
+        "country_accuracy": 0.33051607119989757,
+        "tier_accuracy": 0.5480855423229607
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.19006147540983606,
+          "balanced_accuracy": 0.174970001906202,
+          "macro_f1": 0.15750064332205702,
+          "top2_accuracy": 0.34400614754098363,
+          "log_loss": 2.2121850466481763,
+          "country_accuracy": 0.3319672131147541,
+          "tier_accuracy": 0.5527663934426229
+        },
+        "2022-23": {
+          "accuracy": 0.18053777208706787,
+          "balanced_accuracy": 0.16163458031924458,
+          "macro_f1": 0.14888038093198064,
+          "top2_accuracy": 0.33751600512163893,
+          "log_loss": 2.2217845468538426,
+          "country_accuracy": 0.3290653008962868,
+          "tier_accuracy": 0.5434058898847631
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.17728582404917403,
+          0.19394608784735562
+        ],
+        "balanced_accuracy": [
+          0.16103901675021978,
+          0.1762734885482256
+        ],
+        "macro_f1": [
+          0.14604870940449555,
+          0.16224280026517426
+        ],
+        "top2_accuracy": [
+          0.3318574721475221,
+          0.3516455372006659
+        ],
+        "log_loss": [
+          2.203985619179731,
+          2.2301580241947327
+        ],
+        "country_accuracy": [
+          0.3212831348444103,
+          0.34134012037392747
+        ],
+        "tier_accuracy": [
+          0.537328723268024,
+          0.5585862466384941
+        ]
+      }
+    },
+    {
+      "key": "logreg__match_context",
+      "model": "logreg",
+      "feature_set": "match_context",
+      "n_features": 39,
+      "params": {
+        "C": 0.1
+      },
+      "valid": {
+        "accuracy": 0.38037909836065575,
+        "balanced_accuracy": 0.3726216793215853,
+        "macro_f1": 0.36554439878617584,
+        "top2_accuracy": 0.5586577868852459,
+        "log_loss": 1.827383440805425,
+        "country_accuracy": 0.4823258196721312,
+        "tier_accuracy": 0.6741803278688525
+      },
+      "test": {
+        "accuracy": 0.44141375336150596,
+        "balanced_accuracy": 0.44014567078159816,
+        "macro_f1": 0.42643830032590574,
+        "top2_accuracy": 0.6483544627993341,
+        "log_loss": 1.594008512502052,
+        "country_accuracy": 0.5674222051479063,
+        "tier_accuracy": 0.7048277628377513
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.4182889344262295,
+          "balanced_accuracy": 0.4166917376489345,
+          "macro_f1": 0.40201275316098084,
+          "top2_accuracy": 0.6349897540983607,
+          "log_loss": 1.6520027143091782,
+          "country_accuracy": 0.5478995901639344,
+          "tier_accuracy": 0.6951844262295082
+        },
+        "2022-23": {
+          "accuracy": 0.4645326504481434,
+          "balanced_accuracy": 0.46361043080314907,
+          "macro_f1": 0.4492765447551247,
+          "top2_accuracy": 0.6617157490396927,
+          "log_loss": 1.5360291619629938,
+          "country_accuracy": 0.5869398207426376,
+          "tier_accuracy": 0.7144686299615877
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.4303335894480727,
+          0.452878089384044
+        ],
+        "balanced_accuracy": [
+          0.4300494329812959,
+          0.450085633896696
+        ],
+        "macro_f1": [
+          0.41559990599449353,
+          0.4367020872662159
+        ],
+        "top2_accuracy": [
+          0.6377801254962223,
+          0.6589960302215392
+        ],
+        "log_loss": [
+          1.57029929877182,
+          1.615942857505182
+        ],
+        "country_accuracy": [
+          0.5562748111153797,
+          0.5785023690613394
+        ],
+        "tier_accuracy": [
+          0.695156229991036,
+          0.715395697272378
+        ]
+      }
+    },
+    {
+      "key": "lightgbm__match_context",
+      "model": "lightgbm",
+      "feature_set": "match_context",
+      "n_features": 39,
+      "params": {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.08,
+        "subsample": 0.8801060408008996,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5874199848292246,
+        "reg_lambda": 8.182938833403206,
+        "n_estimators": 69
+      },
+      "valid": {
+        "accuracy": 0.39984631147540983,
+        "balanced_accuracy": 0.39158250015839063,
+        "macro_f1": 0.3761413741162868,
+        "top2_accuracy": 0.5796618852459017,
+        "log_loss": 1.793117882717196,
+        "country_accuracy": 0.5028176229508197,
+        "tier_accuracy": 0.6913422131147541
+      },
+      "test": {
+        "accuracy": 0.4809834805993085,
+        "balanced_accuracy": 0.4810518203851699,
+        "macro_f1": 0.46841682677900504,
+        "top2_accuracy": 0.6779357152004097,
+        "log_loss": 1.4709358749131656,
+        "country_accuracy": 0.602125752337047,
+        "tier_accuracy": 0.7150723524138815
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.46311475409836067,
+          "balanced_accuracy": 0.4634170269286112,
+          "macro_f1": 0.4479007205565756,
+          "top2_accuracy": 0.6641905737704918,
+          "log_loss": 1.551871038517619,
+          "country_accuracy": 0.5824795081967213,
+          "tier_accuracy": 0.7051741803278688
+        },
+        "2022-23": {
+          "accuracy": 0.49884763124199744,
+          "balanced_accuracy": 0.49869852204727555,
+          "macro_f1": 0.48820605345959206,
+          "top2_accuracy": 0.6916773367477593,
+          "log_loss": 1.3900214373429258,
+          "country_accuracy": 0.6217669654289373,
+          "tier_accuracy": 0.7249679897567222
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.4706108336534768,
+          0.49263670124215647
+        ],
+        "balanced_accuracy": [
+          0.4709097058064461,
+          0.4907610544406161
+        ],
+        "macro_f1": [
+          0.45814632241631065,
+          0.4793841932180587
+        ],
+        "top2_accuracy": [
+          0.6682641823536944,
+          0.6874791906774235
+        ],
+        "log_loss": [
+          1.446796117242724,
+          1.4933413270462252
+        ],
+        "country_accuracy": [
+          0.5916858752721219,
+          0.6135292611089768
+        ],
+        "tier_accuracy": [
+          0.7059610705596107,
+          0.7257075169676014
+        ]
+      }
+    },
+    {
+      "key": "logreg__full",
+      "model": "logreg",
+      "feature_set": "full",
+      "n_features": 49,
+      "params": {
+        "C": 0.1
+      },
+      "valid": {
+        "accuracy": 0.555327868852459,
+        "balanced_accuracy": 0.5525561181639159,
+        "macro_f1": 0.5525325509881952,
+        "top2_accuracy": 0.7507684426229508,
+        "log_loss": 1.278108351073862,
+        "country_accuracy": 0.6621413934426229,
+        "tier_accuracy": 0.8063524590163934
+      },
+      "test": {
+        "accuracy": 0.4877705211934947,
+        "balanced_accuracy": 0.5001436850281187,
+        "macro_f1": 0.48326147940197045,
+        "top2_accuracy": 0.7341529004994237,
+        "log_loss": 1.417969124435954,
+        "country_accuracy": 0.6707645024971187,
+        "tier_accuracy": 0.6989371238314765
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.4682377049180328,
+          "balanced_accuracy": 0.48671983647493156,
+          "macro_f1": 0.4550606732520571,
+          "top2_accuracy": 0.711577868852459,
+          "log_loss": 1.527229860516299,
+          "country_accuracy": 0.6654713114754098,
+          "tier_accuracy": 0.680327868852459
+        },
+        "2022-23": {
+          "accuracy": 0.5072983354673496,
+          "balanced_accuracy": 0.513605242441461,
+          "macro_f1": 0.5039078257176792,
+          "top2_accuracy": 0.7567221510883483,
+          "log_loss": 1.3087363680575503,
+          "country_accuracy": 0.676056338028169,
+          "tier_accuracy": 0.7175416133162612
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.47681841464976304,
+          0.498466512997823
+        ],
+        "balanced_accuracy": [
+          0.490042278918511,
+          0.5097850824477317
+        ],
+        "macro_f1": [
+          0.4727146933936371,
+          0.4930205310857757
+        ],
+        "top2_accuracy": [
+          0.7240907926751184,
+          0.7429888590088359
+        ],
+        "log_loss": [
+          1.389409276480108,
+          1.445998466848974
+        ],
+        "country_accuracy": [
+          0.6616724292483033,
+          0.6805640927135357
+        ],
+        "tier_accuracy": [
+          0.6887533615059547,
+          0.7100172877449097
+        ]
+      }
+    },
+    {
+      "key": "lightgbm__full",
+      "model": "lightgbm",
+      "feature_set": "full",
+      "n_features": 49,
+      "params": {
+        "num_leaves": 63,
+        "min_child_samples": 20,
+        "learning_rate": 0.02,
+        "subsample": 0.8673611847161886,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6826577236858795,
+        "reg_lambda": 0.9513194424886675,
+        "n_estimators": 266
+      },
+      "valid": {
+        "accuracy": 0.59375,
+        "balanced_accuracy": 0.5839515322246097,
+        "macro_f1": 0.5878498512623912,
+        "top2_accuracy": 0.7676741803278688,
+        "log_loss": 1.2354340174327647,
+        "country_accuracy": 0.7013319672131147,
+        "tier_accuracy": 0.8030225409836066
+      },
+      "test": {
+        "accuracy": 0.5447560507107184,
+        "balanced_accuracy": 0.5601164967223633,
+        "macro_f1": 0.5443855532993188,
+        "top2_accuracy": 0.7651427839672174,
+        "log_loss": 1.363590913507001,
+        "country_accuracy": 0.7130234344986554,
+        "tier_accuracy": 0.7260852862082213
+      },
+      "test_by_season": {
+        "2021-22": {
+          "accuracy": 0.5171618852459017,
+          "balanced_accuracy": 0.5402452370520621,
+          "macro_f1": 0.5068633912439454,
+          "top2_accuracy": 0.7282274590163934,
+          "log_loss": 1.5671657393608602,
+          "country_accuracy": 0.695952868852459,
+          "tier_accuracy": 0.7061987704918032
+        },
+        "2022-23": {
+          "accuracy": 0.5723431498079385,
+          "balanced_accuracy": 0.5800261769823977,
+          "macro_f1": 0.5724956085388089,
+          "top2_accuracy": 0.8020486555697823,
+          "log_loss": 1.1600682194907481,
+          "country_accuracy": 0.730089628681178,
+          "tier_accuracy": 0.745966709346991
+        }
+      },
+      "test_ci": {
+        "accuracy": [
+          0.5339320015366885,
+          0.556537328723268
+        ],
+        "balanced_accuracy": [
+          0.5505197105765701,
+          0.5710759177030882
+        ],
+        "macro_f1": [
+          0.5343321201997807,
+          0.555686526209773
+        ],
+        "top2_accuracy": [
+          0.7558554232296069,
+          0.7745582020745294
+        ],
+        "log_loss": [
+          1.3286766435875208,
+          1.3959844892119417
+        ],
+        "country_accuracy": [
+          0.7032238442822385,
+          0.723780253553592
+        ],
+        "tier_accuracy": [
+          0.7157126392623896,
+          0.7369701626328595
+        ]
+      }
+    }
+  ],
+  "tuning": {
+    "logreg__match": [
+      {
+        "C": 0.01,
+        "valid_log_loss": 2.12161900834513
+      },
+      {
+        "C": 0.1,
+        "valid_log_loss": 2.1259036565775644
+      },
+      {
+        "C": 1.0,
+        "valid_log_loss": 2.1284861355210576
+      },
+      {
+        "C": 10.0,
+        "valid_log_loss": 2.1289731476885287
+      }
+    ],
+    "lightgbm__match": [
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.943439167964553,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8184208174356183,
+        "reg_lambda": 0.02136095758183536,
+        "n_estimators": 65,
+        "valid_log_loss": 2.1220766816233056
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.08,
+        "subsample": 0.9044558807961411,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8716385831661723,
+        "reg_lambda": 0.028080039499167767,
+        "n_estimators": 29,
+        "valid_log_loss": 2.1275893762619402
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.9707059955394407,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7863190720483988,
+        "reg_lambda": 7.5799378796958745,
+        "n_estimators": 41,
+        "valid_log_loss": 2.143415527723258
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.6908954887139107,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7327508722095009,
+        "reg_lambda": 0.016724779332042475,
+        "n_estimators": 87,
+        "valid_log_loss": 2.1236794055256216
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.03,
+        "subsample": 0.9032350960341495,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.612715580877921,
+        "reg_lambda": 24.97141115492321,
+        "n_estimators": 110,
+        "valid_log_loss": 2.126304598983224
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "learning_rate": 0.08,
+        "subsample": 0.9113533988295047,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5167832247111805,
+        "reg_lambda": 0.4300545164898218,
+        "n_estimators": 22,
+        "valid_log_loss": 2.1396357982920224
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.8732195812969819,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8468572935446903,
+        "reg_lambda": 24.33795386495878,
+        "n_estimators": 70,
+        "valid_log_loss": 2.1265871754973635
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.7481838824139475,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6817334867654847,
+        "reg_lambda": 0.0460415310193194,
+        "n_estimators": 117,
+        "valid_log_loss": 2.118664790230248
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.6907637396203536,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8018883968095063,
+        "reg_lambda": 0.33886890246258256,
+        "n_estimators": 45,
+        "valid_log_loss": 2.1246747936972867
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.08,
+        "subsample": 0.8801060408008996,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5874199848292246,
+        "reg_lambda": 8.182938833403206,
+        "n_estimators": 35,
+        "valid_log_loss": 2.127191573129518
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.08,
+        "subsample": 0.7153312415720976,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8094973023849853,
+        "reg_lambda": 0.030841372208088122,
+        "n_estimators": 29,
+        "valid_log_loss": 2.1266503697702497
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6029449079004022,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8721546265012831,
+        "reg_lambda": 2.1231368983765178,
+        "n_estimators": 124,
+        "valid_log_loss": 2.125917476533732
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.783566310215336,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7412447175717363,
+        "reg_lambda": 0.03085243836966463,
+        "n_estimators": 88,
+        "valid_log_loss": 2.123700631980666
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 20,
+        "learning_rate": 0.02,
+        "subsample": 0.8673611847161886,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6826577236858795,
+        "reg_lambda": 0.9513194424886675,
+        "n_estimators": 103,
+        "valid_log_loss": 2.13538965494419
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.8214317602631983,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7355242964472481,
+        "reg_lambda": 0.11583114335146445,
+        "n_estimators": 80,
+        "valid_log_loss": 2.1186594750670635
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 100,
+        "learning_rate": 0.02,
+        "subsample": 0.774686955692945,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5287508036917176,
+        "reg_lambda": 0.2690606908909025,
+        "n_estimators": 113,
+        "valid_log_loss": 2.1257467946395323
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6233210966756264,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5688303352131979,
+        "reg_lambda": 0.10655605962320293,
+        "n_estimators": 120,
+        "valid_log_loss": 2.125780306726714
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.8228128609365113,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8703389254638481,
+        "reg_lambda": 2.113963045860336,
+        "n_estimators": 73,
+        "valid_log_loss": 2.120594151878063
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.6667891679630815,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4136272438803163,
+        "reg_lambda": 0.020661769519563583,
+        "n_estimators": 98,
+        "valid_log_loss": 2.1207589832511053
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.7847508921005549,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4967630674201611,
+        "reg_lambda": 0.5670961682535098,
+        "n_estimators": 43,
+        "valid_log_loss": 2.1269096148675954
+      }
+    ],
+    "logreg__match_context": [
+      {
+        "C": 0.01,
+        "valid_log_loss": 1.9335017814758502
+      },
+      {
+        "C": 0.1,
+        "valid_log_loss": 1.827383440805425
+      },
+      {
+        "C": 1.0,
+        "valid_log_loss": 1.9261660111614918
+      },
+      {
+        "C": 10.0,
+        "valid_log_loss": 2.045378669866944
+      }
+    ],
+    "lightgbm__match_context": [
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.943439167964553,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8184208174356183,
+        "reg_lambda": 0.02136095758183536,
+        "n_estimators": 200,
+        "valid_log_loss": 1.822862127730851
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.08,
+        "subsample": 0.9044558807961411,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8716385831661723,
+        "reg_lambda": 0.028080039499167767,
+        "n_estimators": 49,
+        "valid_log_loss": 1.8266446227647022
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.9707059955394407,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7863190720483988,
+        "reg_lambda": 7.5799378796958745,
+        "n_estimators": 65,
+        "valid_log_loss": 1.8103116107837787
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.6908954887139107,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7327508722095009,
+        "reg_lambda": 0.016724779332042475,
+        "n_estimators": 190,
+        "valid_log_loss": 1.8212577561337808
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.03,
+        "subsample": 0.9032350960341495,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.612715580877921,
+        "reg_lambda": 24.97141115492321,
+        "n_estimators": 356,
+        "valid_log_loss": 1.8156292372732246
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "learning_rate": 0.08,
+        "subsample": 0.9113533988295047,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5167832247111805,
+        "reg_lambda": 0.4300545164898218,
+        "n_estimators": 33,
+        "valid_log_loss": 1.8152023542361098
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.8732195812969819,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8468572935446903,
+        "reg_lambda": 24.33795386495878,
+        "n_estimators": 135,
+        "valid_log_loss": 1.7999889627668098
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.7481838824139475,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6817334867654847,
+        "reg_lambda": 0.0460415310193194,
+        "n_estimators": 269,
+        "valid_log_loss": 1.8165155991708521
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.6907637396203536,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8018883968095063,
+        "reg_lambda": 0.33886890246258256,
+        "n_estimators": 101,
+        "valid_log_loss": 1.7968269881930692
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.08,
+        "subsample": 0.8801060408008996,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5874199848292246,
+        "reg_lambda": 8.182938833403206,
+        "n_estimators": 69,
+        "valid_log_loss": 1.7931178827171967
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.08,
+        "subsample": 0.7153312415720976,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8094973023849853,
+        "reg_lambda": 0.030841372208088122,
+        "n_estimators": 77,
+        "valid_log_loss": 1.834586650669725
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6029449079004022,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8721546265012831,
+        "reg_lambda": 2.1231368983765178,
+        "n_estimators": 319,
+        "valid_log_loss": 1.831780251583919
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.783566310215336,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7412447175717363,
+        "reg_lambda": 0.03085243836966463,
+        "n_estimators": 197,
+        "valid_log_loss": 1.8204879420824223
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 20,
+        "learning_rate": 0.02,
+        "subsample": 0.8673611847161886,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6826577236858795,
+        "reg_lambda": 0.9513194424886675,
+        "n_estimators": 135,
+        "valid_log_loss": 1.8098856518174795
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.8214317602631983,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7355242964472481,
+        "reg_lambda": 0.11583114335146445,
+        "n_estimators": 208,
+        "valid_log_loss": 1.8237019094595137
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 100,
+        "learning_rate": 0.02,
+        "subsample": 0.774686955692945,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5287508036917176,
+        "reg_lambda": 0.2690606908909025,
+        "n_estimators": 189,
+        "valid_log_loss": 1.8180833489354369
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6233210966756264,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5688303352131979,
+        "reg_lambda": 0.10655605962320293,
+        "n_estimators": 275,
+        "valid_log_loss": 1.8340747631422178
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.8228128609365113,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8703389254638481,
+        "reg_lambda": 2.113963045860336,
+        "n_estimators": 184,
+        "valid_log_loss": 1.8204877698086928
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.6667891679630815,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4136272438803163,
+        "reg_lambda": 0.020661769519563583,
+        "n_estimators": 203,
+        "valid_log_loss": 1.805686204237876
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.7847508921005549,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4967630674201611,
+        "reg_lambda": 0.5670961682535098,
+        "n_estimators": 111,
+        "valid_log_loss": 1.821853581866655
+      }
+    ],
+    "logreg__full": [
+      {
+        "C": 0.01,
+        "valid_log_loss": 1.3738421568199737
+      },
+      {
+        "C": 0.1,
+        "valid_log_loss": 1.278108351073862
+      },
+      {
+        "C": 1.0,
+        "valid_log_loss": 1.3700544143569293
+      },
+      {
+        "C": 10.0,
+        "valid_log_loss": 1.5047193816233502
+      }
+    ],
+    "lightgbm__full": [
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.943439167964553,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8184208174356183,
+        "reg_lambda": 0.02136095758183536,
+        "n_estimators": 179,
+        "valid_log_loss": 1.2679697682608297
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.08,
+        "subsample": 0.9044558807961411,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8716385831661723,
+        "reg_lambda": 0.028080039499167767,
+        "n_estimators": 90,
+        "valid_log_loss": 1.2594318458975822
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.9707059955394407,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7863190720483988,
+        "reg_lambda": 7.5799378796958745,
+        "n_estimators": 151,
+        "valid_log_loss": 1.2573767125396442
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.6908954887139107,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7327508722095009,
+        "reg_lambda": 0.016724779332042475,
+        "n_estimators": 206,
+        "valid_log_loss": 1.2724998334787327
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.03,
+        "subsample": 0.9032350960341495,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.612715580877921,
+        "reg_lambda": 24.97141115492321,
+        "n_estimators": 412,
+        "valid_log_loss": 1.2764059359579938
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 50,
+        "learning_rate": 0.08,
+        "subsample": 0.9113533988295047,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5167832247111805,
+        "reg_lambda": 0.4300545164898218,
+        "n_estimators": 68,
+        "valid_log_loss": 1.2507534568997412
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.8732195812969819,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8468572935446903,
+        "reg_lambda": 24.33795386495878,
+        "n_estimators": 222,
+        "valid_log_loss": 1.2660846294439336
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.7481838824139475,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6817334867654847,
+        "reg_lambda": 0.0460415310193194,
+        "n_estimators": 382,
+        "valid_log_loss": 1.2449891578865946
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "subsample": 0.6907637396203536,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8018883968095063,
+        "reg_lambda": 0.33886890246258256,
+        "n_estimators": 140,
+        "valid_log_loss": 1.2476978478497842
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.08,
+        "subsample": 0.8801060408008996,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5874199848292246,
+        "reg_lambda": 8.182938833403206,
+        "n_estimators": 147,
+        "valid_log_loss": 1.2507727241390099
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.08,
+        "subsample": 0.7153312415720976,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8094973023849853,
+        "reg_lambda": 0.030841372208088122,
+        "n_estimators": 82,
+        "valid_log_loss": 1.2923385645062846
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6029449079004022,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8721546265012831,
+        "reg_lambda": 2.1231368983765178,
+        "n_estimators": 437,
+        "valid_log_loss": 1.2860405619857982
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 100,
+        "learning_rate": 0.03,
+        "subsample": 0.783566310215336,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7412447175717363,
+        "reg_lambda": 0.03085243836966463,
+        "n_estimators": 205,
+        "valid_log_loss": 1.2550338492086102
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 20,
+        "learning_rate": 0.02,
+        "subsample": 0.8673611847161886,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.6826577236858795,
+        "reg_lambda": 0.9513194424886675,
+        "n_estimators": 266,
+        "valid_log_loss": 1.2354340174327643
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.8214317602631983,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.7355242964472481,
+        "reg_lambda": 0.11583114335146445,
+        "n_estimators": 201,
+        "valid_log_loss": 1.2809181202197888
+      },
+      {
+        "num_leaves": 31,
+        "min_child_samples": 100,
+        "learning_rate": 0.02,
+        "subsample": 0.774686955692945,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5287508036917176,
+        "reg_lambda": 0.2690606908909025,
+        "n_estimators": 283,
+        "valid_log_loss": 1.2557747904779042
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.02,
+        "subsample": 0.6233210966756264,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.5688303352131979,
+        "reg_lambda": 0.10655605962320293,
+        "n_estimators": 390,
+        "valid_log_loss": 1.2917435262121526
+      },
+      {
+        "num_leaves": 7,
+        "min_child_samples": 50,
+        "learning_rate": 0.05,
+        "subsample": 0.8228128609365113,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.8703389254638481,
+        "reg_lambda": 2.113963045860336,
+        "n_estimators": 221,
+        "valid_log_loss": 1.250369441570505
+      },
+      {
+        "num_leaves": 15,
+        "min_child_samples": 50,
+        "learning_rate": 0.03,
+        "subsample": 0.6667891679630815,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4136272438803163,
+        "reg_lambda": 0.020661769519563583,
+        "n_estimators": 292,
+        "valid_log_loss": 1.2471916334730346
+      },
+      {
+        "num_leaves": 63,
+        "min_child_samples": 200,
+        "learning_rate": 0.05,
+        "subsample": 0.7847508921005549,
+        "subsample_freq": 1,
+        "colsample_bytree": 0.4967630674201611,
+        "reg_lambda": 0.5670961682535098,
+        "n_estimators": 131,
+        "valid_log_loss": 1.2840445168200385
+      }
+    ]
+  },
+  "runtime_seconds": 707.2
+}
